@@ -3,7 +3,7 @@ package generate
 import (
 	"os"
 
-	"github.com/autarcenergy/weather-data-poc/internal/parser"
+	"github.com/autarcenergy/weather-data-scraper/internal/parser"
 	"github.com/gocarina/gocsv"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"

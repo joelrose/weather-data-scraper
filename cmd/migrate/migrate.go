@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/autarcenergy/weather-data-poc/internal/parser"
+	"github.com/autarcenergy/weather-data-scraper/internal/parser"
 	"github.com/gocarina/gocsv"
 	"github.com/jmoiron/sqlx"
 	"github.com/spf13/cobra"

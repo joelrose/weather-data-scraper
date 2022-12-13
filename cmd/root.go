@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/autarcenergy/weather-data-poc/cmd/generate"
-	"github.com/autarcenergy/weather-data-poc/cmd/migrate"
+	"github.com/autarcenergy/weather-data-scraper/cmd/generate"
+	"github.com/autarcenergy/weather-data-scraper/cmd/migrate"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )

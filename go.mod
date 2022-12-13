@@ -1,4 +1,4 @@
-module github.com/autarcenergy/weather-data-poc
+module github.com/autarcenergy/weather-data-scraper
 
 go 1.19
 
