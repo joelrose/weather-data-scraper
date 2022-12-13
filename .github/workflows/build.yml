@@ -1,0 +1,24 @@
+name: build
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, reopened]
+jobs:
+  main:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Setup Go
+        uses: actions/setup-go@6edd4406fa81c3da01a34fa6f6343087c207a568 # 3.5.0
+        with:
+          go-version: 1.19
+
+      - name: Checkout
+        uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b # 3.2.0
+
+      - name: Setup ko
+        uses: imjasonh/setup-ko@ace48d793556083a76f1e3e6068850c1f4a369aa # v0.6
+
+      - name: Build
+        run: ko build
