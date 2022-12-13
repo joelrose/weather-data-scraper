@@ -10,5 +10,10 @@ This tool is used to get the "Jahresmittel- und die Norm-Außentemperaturen" fro
 Update the files/results.html and run:
 
 ```bash
-make run
+make generate
+```
+
+and
+```bash
+make migrate
 ```
