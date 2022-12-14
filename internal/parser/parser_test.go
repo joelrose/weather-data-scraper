@@ -11,15 +11,28 @@ func TestMustParse(t *testing.T) {
 		expected []Record
 	}{
 		{
-			`<polygon zip="12345" aat="10 °C" dot="-11 °C" alt="100 m" zone="1" place="Test" />`,
+			`<polygon zip="12345" aat="10 °C" dot="11 °C" alt="100 m" zone="1" place="Place 1" />`,
 			[]Record{
 				{
 					ZIP:                    "12345",
 					MeanAnnualTemperature:  10,
-					NormOutsideTemperature: -11,
+					NormOutsideTemperature: 11,
 					Height:                 100,
 					Zone:                   1,
-					Place:                  "Test",
+					Place:                  "Place 1",
+				},
+			},
+		},
+		{
+			`<polygon zip="54321" aat="-11 °C" dot="-12 °C" alt="-200 m" zone="-2" place="Place 2" />`,
+			[]Record{
+				{
+					ZIP:                    "54321",
+					MeanAnnualTemperature:  -11,
+					NormOutsideTemperature: -12,
+					Height:                 -200,
+					Zone:                   -2,
+					Place:                  "Place 2",
 				},
 			},
 		},
