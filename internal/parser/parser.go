@@ -42,11 +42,11 @@ func MustParse(input string) []Record {
 func mustCleanData(attrs map[string]string) Record {
 	zip := attrs["zip"]
 
-	jat, err := strconv.ParseFloat(cleanCelsius(attrs["aat"]), 16)
+	jat, err := strconv.ParseFloat(cleanCelsius(attrs["aat"]), 32)
 	if err != nil {
 		log.WithError(err).Fatal("failed converting aat")
 	}
-	nat, err := strconv.ParseFloat(cleanCelsius(attrs["dot"]), 16)
+	nat, err := strconv.ParseFloat(cleanCelsius(attrs["dot"]), 32)
 	if err != nil {
 		log.WithError(err).Fatal("failed converting dot")
 	}
