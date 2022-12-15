@@ -14,7 +14,7 @@ import (
 
 const (
 	defaultConnectionString = "postgresql://username:password@localhost:5432/autarc?sslmode=disable"
-	defaultImportPath       = "files/output.csv"
+	defaultImportPath       = "assets/output.csv"
 )
 
 func NewCmd() *cobra.Command {

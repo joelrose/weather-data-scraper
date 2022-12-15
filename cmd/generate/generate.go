@@ -10,8 +10,8 @@ import (
 )
 
 const (
-	defaultExportPath = "files/output.csv"
-	defaultImportPath = "files/results.html"
+	defaultExportPath = "assets/output.csv"
+	defaultImportPath = "assets/results.html"
 )
 
 func NewCmd() *cobra.Command {
